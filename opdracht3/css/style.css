@@ -1,0 +1,152 @@
+/* CSS reset */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+input {
+    border: 1px solid #b0b0b0;
+    padding: 3px 5px 4px;
+    color: #979797;
+    width: 190px;
+}
+
+address, caption, cite, code, dfn, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+/* responsive img snippet */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* END RESET SHEET */
+
+header {
+    height: 50px;
+    background-color: rgb(255,200,200);
+}
+
+li {
+    float: left;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+ul {
+    font-size: 20px;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    max-width: 984px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 3em;
+    color: #000;
+}
+
+article footer {
+    background-color: rgb(255,200,200);
+    margin-top: 20px;
+}
+
+article header {
+    background: none;
+}
+
+.foto {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    float: left;
+    background-color: yellow;
+}
+
+.clear {
+    clear: both;
+}
+
+.fotorechts {
+    background-image: url(../img/tiramisu@2x.jpg);
+    background-size: 300px;
+}
+
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: grey;
+    }
+}
+
+@media screen and (max-width:800px){
+    .foto{
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:840px){
+    .foto{
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+/* 
+De <div> en afbeeldingen zijn nu kleiner op kleine schermen. Wanneer het scherm nog kleiner wordt zal de tweede  519px
+afbeelding onder de eerste afbeelding komen te staan. Zorg ervoor dat, precies op dat breekpunt, 
+de afbeeldingen niet meer floaten en gecentreerd komen te staan. Zorg dat ze dan de volledig breedte van het scherm innemen. */

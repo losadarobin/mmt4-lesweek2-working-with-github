@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>week2-opdr1</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li> <a href="#" id="colorTitle">Roze titel</a></li>
+                <li> <a href="#" id="font">Comic Sans</a></li>
+                <li> <a href="#" id="beep">Beep</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <article>
+
+            <header>
+
+                <h2>
+                    Tiramisu
+                </h2>
+
+            </header>
+
+            <div class="foto">
+
+                <img src="img/tiramisu@2x.jpg" alt="tiramisu">
+            </div>
+
+            <div class="foto fotorechts">
+
+
+            </div>
+
+            <p class="clear">
+                My money's in that office, right? If she start giving me some <span>bullshit</span> about it ain't there, and we got
+                to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot
+                that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me
+                when I'm talking to you, motherfucker.
+            </p>
+
+
+
+            <footer>
+                <p>Robin Losada</p>
+            </footer>
+
+
+        </article>
+
+
+
+    </main>
+
+
+    <script>
+        var kleurtje = '#f4425f';
+        var fontType = "Comic Sans MS";
+        $(document).ready(function () {
+            //console.log('hello MAMDT');
+
+            $('#colorTitle').click(function () {
+                $('h2').css({ 'color': kleurtje});
+            });
+
+            $('#font').click(function () {
+                $('*').css({ 'font-family': fontType });
+            });
+
+            $('#beep').click(function(){
+                $("span").text("*beep*");
+            })
+
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
